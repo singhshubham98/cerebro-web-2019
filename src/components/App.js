@@ -6,7 +6,9 @@ import * as firebase from 'firebase';
 import { getState, getStore } from '../store';
 
 import Navbar from './Navbar';
+import Social from './Social';
 import HomePage from './HomePage';
+import About from './About';
 
 import '../sass/main.scss';
 
@@ -27,9 +29,11 @@ const App = () => (
 		<BrowserRouter>
 			<div>
 				<Navbar />
+				<Social />
 				<div className="main">
 					<Switch>
 						<Route exact path="/" component={HomePage} />
+						<Route exact path="/about" component={About} />
 					</Switch>
 				</div>
 			</div>

@@ -1,10 +1,12 @@
 @import 'abstracts/variables';
 
 @import 'base/base';
+@import 'base/typography';
 
 @import 'components/container';
 @import 'components/social-icons';
 
 @import 'layout/navbar';
 
+@import 'pages/about';
 @import 'pages/homepage';
