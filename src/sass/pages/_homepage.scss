@@ -1,0 +1,12 @@
+.homepage {
+	&__logo-wrapper {
+		height: calc(100vh - 7rem);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__logo {
+		width: 55rem;
+	}
+}
