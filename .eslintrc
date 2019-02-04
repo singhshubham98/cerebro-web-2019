@@ -8,7 +8,7 @@
 		"browser": true
 	},
 	"rules": {
-		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"indent": ["warn", "tab", { "SwitchCase": 1 }],
 		"react/jsx-no-bind": "warn",
 		"react/require-default-props": "error",
 		"react/forbid-component-props": ["error", { "forbid": ["style"] }],
