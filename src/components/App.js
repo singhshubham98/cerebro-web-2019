@@ -9,7 +9,7 @@ import Navbar from './Navbar';
 import Social from './Social';
 import HomePage from './HomePage';
 import About from './About';
-
+import Team from './Team';
 import '../sass/main.scss';
 
 // Firebase
@@ -33,6 +33,7 @@ const App = () => (
 				<div className="main">
 					<Switch>
 						<Route exact path="/" component={HomePage} />
+						<Route exact path="/team" component={Team} />
 						<Route exact path="/about" component={About} />
 					</Switch>
 				</div>
