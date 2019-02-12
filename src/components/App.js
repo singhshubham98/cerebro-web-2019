@@ -10,6 +10,7 @@ import Social from './Social';
 import HomePage from './HomePage';
 import Event from './Event';
 import About from './About';
+import MyEvents from './MyEvents';
 
 import '../sass/main.scss';
 
@@ -35,6 +36,7 @@ const App = () => (
 					<Switch>
 						<Route exact path="/" component={HomePage} />
 						<Route exact path="/about" component={About} />
+						<Route exact path="/dashboard" component={MyEvents} />
 						<Route exact path="/events/:id" component={Event} />
 					</Switch>
 				</div>
