@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import GoogleButton from 'react-google-button'
+import FontAwesome from 'react-fontawesome'
+
 import { signIn } from "../actions/authActions";
 
 class Signin extends Component {
@@ -11,7 +12,7 @@ class Signin extends Component {
 
   render() {
     return (
-      <GoogleButton onClick={this.props.signIn}/>
+      <button className='btn' onClick={this.props.signIn}><FontAwesome name='google' size='1x'/> Sign In</button>
     );
   }
 }
