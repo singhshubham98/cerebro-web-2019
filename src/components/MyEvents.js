@@ -28,7 +28,7 @@ class MyEvents extends Component {
 	render() {
 		return (
 			<div className='my-events'>
-				<div className='my-events__user-profile'>
+				<div className='my-events__user-profile' id='user-profile-main'>
 					<div className='user-data'>
 						<div style={{backgroundImage: `url(${image})`}}></div>
 						<div className='user-profile-wrapper'>
