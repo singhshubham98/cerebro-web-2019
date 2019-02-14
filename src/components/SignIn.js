@@ -1,24 +1,29 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import PropTypes from "prop-types";
-import FontAwesome from 'react-fontawesome'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import FontAwesome from 'react-fontawesome';
 
-import { signIn } from "../actions/authActions";
+import { signIn } from '../actions/authActions';
 
 class Signin extends Component {
-  static contextTypes = {
-    router: PropTypes.object
-  };
+	static contextTypes = {
+		router: PropTypes.object
+	};
 
-  render() {
-    return (
-      <button className='btn' onClick={this.props.signIn}><FontAwesome name='google' size='1x'/> Sign In</button>
-    );
-  }
+	render() {
+		return (
+			<button className="btn" onClick={this.props.signIn}>
+				<FontAwesome name="google" /> Sign In
+			</button>
+		);
+	}
 }
 
 const mapStateToProps = ({ auth }) => {
-  return { auth };
-}
+	return { auth };
+};
 
-export default connect(mapStateToProps, { signIn })(Signin);
+export default connect(
+	mapStateToProps,
+	{ signIn }
+)(Signin);

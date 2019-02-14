@@ -34,7 +34,7 @@ class Navbar extends Component {
 	};
 
 	render() {
-		const { auth, singnOut } = this.props;
+		const { auth, signOut } = this.props;
 		return (
 			<nav className="navbar">
 				<div id="main-navbar" className="container">
@@ -45,7 +45,7 @@ class Navbar extends Component {
 					<NavLink to="/team">Team</NavLink>
 					<NavLink to="/timeline">Timeline</NavLink>
 					<NavLink to="/events">Events</NavLink>
-					<NavLink to="/dashboard">My Events</NavLink>
+					{auth && <NavLink to="/dashboard">My Events</NavLink>}
 					{auth ? (
 						<button className="btn" onClick={signOut}>
 							Sign Out
@@ -56,7 +56,7 @@ class Navbar extends Component {
 				</div>
 				<div id="drawer-button" className="container">
 					<span id="drawer-button-span" onClick={this.showDrawer}>
-						<i class="fas fa-bars" />
+						<i className="fas fa-bars" />
 					</span>
 				</div>
 
