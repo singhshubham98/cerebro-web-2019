@@ -8,8 +8,11 @@ import { getState, getStore } from '../store';
 import Navbar from './Navbar';
 import Social from './Social';
 import HomePage from './HomePage';
+import Event from './Event';
 import About from './About';
 import Team from './Team';
+import MyEvents from './MyEvents';
+
 import '../sass/main.scss';
 
 // Firebase
@@ -35,6 +38,8 @@ const App = () => (
 						<Route exact path="/" component={HomePage} />
 						<Route exact path="/team" component={Team} />
 						<Route exact path="/about" component={About} />
+						<Route exact path="/dashboard" component={MyEvents} />
+						<Route exact path="/events/:id" component={Event} />
 					</Switch>
 				</div>
 			</div>

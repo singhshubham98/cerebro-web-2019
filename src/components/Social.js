@@ -5,7 +5,7 @@ import Instagram from '../img/instagram.svg';
 import Twitter from '../img/twitter.svg';
 
 const Social = () => (
-	<div className="social-icons">
+	<div id='social-icons' className="social-icons">
 		<a href="https://www.facebook.com/cerebro.iiitv" target="_blank" rel="noopener noreferrer">
 			<img src={Facebook} alt="Facebook Logo" className="social-icons__icon" />
 		</a>
